@@ -24,7 +24,7 @@ app.options("*", (req, res) => {
     // res.setHeader("Access-Control-Allow-Origin", req.headers.origin); // Dynamically respond based on origin
     res.setHeader("Access-Control-Allow-Origin", "https://car-management-system-spyne.vercel.app");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization,auth-token");
     res.setHeader("Access-Control-Allow-Credentials", "true"); // Allow credentials in response
     res.sendStatus(200);
 });
