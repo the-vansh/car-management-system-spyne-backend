@@ -16,7 +16,7 @@ const corsOptions = {
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     optionSuccessStatus: 200,
-    allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
+    allowedHeaders: ["Content-Type", "Authorization","auth-token"], // Allowed headers
 };
 app.use(cors(corsOptions));
 // Ensure the backend includes credentials in the response headers
